@@ -12,7 +12,10 @@
     </th>
   </tr>
   <tr *ngFor="let tarefa of tarefas">
-    <td [class.sucess]="!tarefa.concluida"> <!-- atribui para um componete o valor se estiver concluida -->
+     <!--  [tarefaConcluida]="tarefa.concluida" -->
+    <td  
+         
+        [class.sucess]="!tarefa.concluida"> <!-- atribui para um componete o valor se estiver concluida -->
         {{tarefa.nome}}
 
     </td>
@@ -30,5 +33,4 @@
   </tr>
 </table>
 
-<p *ngIf="tarefas.length == 0">Nenhuma tarefa cadastrada.</p>
 <p *ngIf="tarefas.length == 0">Nenhuma tarefa cadastrada.</p>

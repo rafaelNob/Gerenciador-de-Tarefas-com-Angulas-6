@@ -7,11 +7,13 @@ import { TarefasModule } from './tarefas';
 import { FormsModule } from '@angular/forms';
 
 import { HttpModule } from '@angular/http';
+import { TarefaConcluidaDirective } from './tarefas/shared/tarefa-concluida.directive';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TarefaConcluidaDirective
   ],
   imports: [
     BrowserModule,

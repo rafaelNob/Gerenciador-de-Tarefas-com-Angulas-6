@@ -7,9 +7,10 @@ import { TarefaService, Tarefa } from '../shared';
   styleUrls: ['./listar-tarefa.component.css']
 })
 export class ListarTarefaComponent implements OnInit {
+  
   tarefas: Tarefa[];
   constructor(private tarefaService: TarefaService) { }
-
+ 
   ngOnInit() {
     this.tarefas = this.listarTodos();
     /* this.tarefas = [
